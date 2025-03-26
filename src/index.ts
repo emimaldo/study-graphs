@@ -1,4 +1,4 @@
-import { FlightNetwork } from "./flight-network-example/FlightNetwork.js";
+import { FlightNetwork } from "./flight-network-example/FlightNetwork.ts";
 
 const flightNetwork = new FlightNetwork();
 
