@@ -23,9 +23,17 @@ export class Graph<T>
     }
 
     addEdge(start: GraphNode<T>, end: GraphNode<T>) {
-        this.addNode(start.value);
-        this.addNode(end.value);
+        this.addNode(start.getValue());
+        this.addNode(end.getValue());
 
-        start.adjacent.set(end.value, end);
+        start.getAdjacents().set(end.getValue(), end);
+    }
+
+    getAllNodes(): GraphNode<T>[] {
+        return Array.from(this.nodes.values());
+    }
+
+    get size(): number {
+        return this.nodes.size;
     }
 }
