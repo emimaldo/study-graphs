@@ -14,7 +14,7 @@ export class RoutesBetweenNodes {
 
             visited.add(current);
 
-            for (const neighbor of current.adjacent.values()) {
+            for (const neighbor of current.getAdjacents().values()) {
                 if (!visited.has(neighbor)) {
                     queue.push(neighbor);
                 }
