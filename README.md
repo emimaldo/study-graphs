@@ -1,6 +1,6 @@
-# Study Graphs
+# Graphs
 
-## Graphs
+## Definition
 A graph is a data structure composed of a set of nodes, called vertices, and a set of connections between them, called edges. Unlike trees, a graph does not necessarily have a root node or a hierarchical structure.
 
 **Graph Characteristics:**
